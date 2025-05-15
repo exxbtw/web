@@ -1,0 +1,198 @@
+/* Стили для логотипа в шапке */
+.logo {
+  text-decoration: none;
+}
+
+.logo h1 {
+  margin: 0;
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+
+
+/* Стили для всего приложения */
+.app {
+  min-height: 100vh;
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+/* Стили для логотипа в левом нижнем углу */
+.bottom-left-logo {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  z-index: 1000;
+}
+
+/* Стили для шапки */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: rgba(30, 60, 114, 0.8);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Стили для навигации */
+nav {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+/* Стили для блока с информацией о пользователе */
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Стили для ника пользователя */
+.username {
+  font-size: 16px;
+  color: white;
+}
+
+/* Стили для иконки пользователя */
+.user-icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+/* Стили для ссылок и кнопок в навигации */
+nav a,
+nav button {
+  color: white;
+  text-decoration: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+nav a:hover,
+nav button:hover {
+  text-decoration: underline;
+}
+
+/* Стили для кнопки выхода */
+.logout-button {
+  padding: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Стили для иконки выхода */
+.logout-icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.logout-button:hover .logout-icon {
+  opacity: 0.8;
+}
+
+/* Стили для обёртки форм */
+.form-wrapper {
+  display: flex;
+  justify-content: center; /* Центрируем горизонтально */
+  align-items: center; /* Центрируем вертикально */
+  min-height: calc(100vh - 80px); /* Учитываем высоту шапки */
+  background: none;
+  width: 100%; /* Убеждаемся, что обёртка занимает всю ширину */
+}
+
+/* Стили для контейнера форм */
+.form-container {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 10px;
+  width: 350px; /* Фиксированная ширина */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  color: #1e3c72;
+  text-align: center; /* Центрируем текст внутри контейнера */
+}
+
+/* Заголовок в форме */
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+/* Стили для полей ввода */
+.form-container input,
+.form-container textarea {
+  display: block;
+  width: 100%; /* Убеждаемся, что поля занимают всю ширину контейнера */
+  margin: 10px 0; /* Вертикальные отступы */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box; /* Учитываем padding и border в ширине */
+  text-align: left; /* Текст внутри полей слева, если нужно */
+}
+
+/* Дополнительные стили для textarea */
+.form-container textarea {
+  min-height: 100px;
+  overflow: hidden;
+}
+
+/* Стили для кнопок в форме */
+.form-container button {
+  width: 100%; /* Кнопка занимает всю ширину контейнера */
+  padding: 12px;
+  background: #2a5298;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.form-container button:hover {
+  background: #1e3c72;
+}
+
+/* Стили для ошибок */
+.form-container .error {
+  color: red;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Стили для сообщений об успехе */
+.form-container .success {
+  color: green;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Стили для футера формы */
+.form-footer {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.form-footer a {
+  color: #2a5298;
+  text-decoration: none;
+}
+
+.form-footer a:hover {
+  text-decoration: underline;
+}
